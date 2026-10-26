@@ -28,3 +28,213 @@ Ejercicio 08 · La letra
   - El mismo <link> de Google Fonts que en index.html.
 ============================================================
 -->
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestros Puestos - Sabores de La Plaza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >Sabores de La Plaza</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContenido"
+          aria-controls="navbarContenido"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContenido">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="puestos.html"
+                >Nuestros Puestos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto y Pedidos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+      <h1 class="mb-4 text-center text-lg-start">Catálogo de Puestos</h1>
+
+      <div class="row g-4">
+        <aside class="col-12 col-lg-3">
+          <div class="card shadow-sm">
+            <div class="card-header bg-dark text-white fw-bold">Categorías</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item active">Frutas</li>
+              <li class="list-group-item">Panadería</li>
+              <li class="list-group-item">Almuerzos</li>
+              <li class="list-group-item">Jugos</li>
+              <li class="list-group-item">Café</li>
+            </ul>
+          </div>
+        </aside>
+
+        <section class="col-12 col-lg-9">
+          <div class="row g-4 mb-5">
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-2"
+                  >
+                    <h5 class="card-title fw-bold">Frutería Doña María</h5>
+                    <span class="badge bg-success">Nuevo</span>
+                  </div>
+                  <p class="card-text text-muted flex-grow-1">
+                    Las mejores frutas seleccionadas del campo a su hogar cada
+                    mañana.
+                  </p>
+                  <a href="contacto.html" class="btn btn-primary mt-auto"
+                    >Pedir aquí</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-2"
+                  >
+                    <h5 class="card-title fw-bold">Panadería El Trigal</h5>
+                    <span class="badge bg-danger">Popular</span>
+                  </div>
+                  <p class="card-text text-muted flex-grow-1">
+                    Pan fresco artesanal, almojábanas, buñuelos y amasijos
+                    típicos.
+                  </p>
+                  <a href="contacto.html" class="btn btn-primary mt-auto"
+                    >Pedir aquí</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-2"
+                  >
+                    <h5 class="card-title fw-bold">Jugos y Batidos Don José</h5>
+                    <span class="badge bg-warning text-dark"
+                      >Sin conservantes</span
+                    >
+                  </div>
+                  <p class="card-text text-muted flex-grow-1">
+                    Jugos 100% naturales en agua o leche con la mejor fruta de
+                    la temporada.
+                  </p>
+                  <a href="contacto.html" class="btn btn-primary mt-auto"
+                    >Pedir aquí</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-4">
+              <div class="card h-100 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <div
+                    class="d-flex justify-content-between align-items-start mb-2"
+                  >
+                    <h5 class="card-title fw-bold">Café Origen de la Plaza</h5>
+                    <span class="badge bg-info text-dark">Artesanal</span>
+                  </div>
+                  <p class="card-text text-muted flex-grow-1">
+                    Café especial tostado en el puesto, preparado al momento a
+                    su gusto.
+                  </p>
+                  <a href="contacto.html" class="btn btn-primary mt-auto"
+                    >Pedir aquí</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h4 mb-3 border-bottom pb-2">
+            Lista de Precios Destacados
+          </h3>
+          <div class="table-responsive">
+            <table
+              class="table table-striped table-hover align-middle shadow-sm"
+            >
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Puesto</th>
+                  <th scope="col">Precio Estimado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cesta de Frutas Variadas (1kg)</td>
+                  <td>Frutería Doña María</td>
+                  <td>$12.000 COP</td>
+                </tr>
+                <tr>
+                  <td>Pan Ocañero / Artesanal x 6</td>
+                  <td>Panadería El Trigal</td>
+                  <td>$8.000 COP</td>
+                </tr>
+                <tr>
+                  <td>Jugo Natural Grande (16 oz)</td>
+                  <td>Jugos Don José</td>
+                  <td>$6.000 COP</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-1">
+          &copy; 2026 Colectivo Sabores de La Plaza. Todos los derechos
+          reservados.
+        </p>
+        <small class="text-secondary"
+          >Plaza de Mercado Central · Teléfono: (601) 555-0199</small
+        >
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

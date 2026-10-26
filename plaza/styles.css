@@ -17,3 +17,21 @@ Recuerda: este archivo se enlaza DESPUÉS de Bootstrap.
 La paleta es tuya: colores cálidos de plaza de mercado.
 ============================================================
 */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+:root {
+  --bs-primary: #c85a17;
+  --bs-primary-rgb: 200, 90, 23;
+
+  --bs-body-font-family: "Montserrat", sans-serif;
+}
+
+.btn-primary {
+  --bs-btn-bg: #c85a17;
+  --bs-btn-border-color: #c85a17;
+  --bs-btn-hover-bg: #a3460f;
+  --bs-btn-hover-border-color: #923e0c;
+  --bs-btn-active-bg: #923e0c;
+  --bs-btn-active-border-color: #81360a;
+}
